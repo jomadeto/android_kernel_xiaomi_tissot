@@ -29,6 +29,8 @@ static int __bpf_mt_check_bytecode(struct sock_filter *insns, __u16 len,
 
 	if (len > XT_BPF_MAX_NUM_INSTR)
 		return -EINVAL;
+	if (info->bpf_program_num_elem > XT_BPF_MAX_NUM_INSTR)
+		return -EINVAL;
 
 	program.len = len;
 	program.filter = insns;
