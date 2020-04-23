@@ -167,6 +167,10 @@ static void put_pages(struct drm_gem_object *obj)
 
 	if (msm_obj->pages) {
 		if (msm_obj->sgt) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 12cbe1e2c8d3... Merge tag 'v4.9.219' into derp10
 			/* For non-cached buffers, ensure the new
 			 * pages are clean because display controller,
 			 * GPU, etc. are not coherent:
