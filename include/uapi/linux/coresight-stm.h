@@ -14,7 +14,6 @@
 
 #define STM_FLAG_TIMESTAMPED   _BITUL(3)
 #define STM_FLAG_GUARANTEED    _BITUL(7)
->>>>>>> 1b62259d8e90... coresight: do not use the BIT() macro in the UAPI header
 
 /*
  * The CoreSight STM supports guaranteed and invariant timing
